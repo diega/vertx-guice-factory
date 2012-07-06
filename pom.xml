@@ -1,0 +1,49 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.vertx</groupId>
+  <artifactId>vertx-guice-factory</artifactId>
+  <packaging>jar</packaging>
+
+  <version>${vertx.version}</version>
+
+  <name>Vert.x :: Guice Verticle Factory</name>
+  <url>https://github.com/diega/vertx-guice-factory</url>
+
+  <properties>
+    <vertx.version>1.1.0</vertx.version>
+    <guice.version>3.0</guice.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.vertx</groupId>
+      <artifactId>vertx-platform</artifactId>
+      <version>${vertx.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.google.inject</groupId>
+      <artifactId>guice</artifactId>
+      <version>${guice.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.vertx</groupId>
+      <artifactId>vertx-junit4</artifactId>
+      <version>${vertx.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.httpcomponents</groupId>
+      <artifactId>httpclient</artifactId>
+      <version>4.2</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.mozilla</groupId>
+      <artifactId>rhino</artifactId>
+      <version>1.7R4</version>
+      <scope>runtime</scope>
+    </dependency>
+  </dependencies>
+</project>
